@@ -134,12 +134,12 @@ class FilePickerWeb extends FilePicker {
       // This listener is called before the input changed event,
       // and the `uploadInput.files` value is still null
       // Wait for results from js to dart
-      Future.delayed(Duration(seconds: 1)).then((value) {
+      /*Future.delayed(Duration(seconds: 1)).then((value) {
         if (!changeEventTriggered) {
           changeEventTriggered = true;
           filesCompleter.complete(null);
         }
-      });
+      });*/
     }
 
     uploadInput.onChange.listen(changeEventListener);
